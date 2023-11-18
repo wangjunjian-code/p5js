@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.8.0/p5.js"></script>
+
+    <meta charset="utf-8" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <script>
+        let s = 10;
+        let sp = 1;
+
+        let = [];
+
+        function setup() {
+          createCanvas(windowWidth, windowHeight);
+        }
+
+        function draw() {
+          background(220);
+          translate(width / 2, height / 2);
+          textAlign(CENTER, CENTER);
+          //let s = map(mouseX,0,width,-15,15);
+          scale(s, 8);
+          for (let i = -height / 2; i < height; i = i + 10) {
+            text("Z", 0, i);
+          }
+
+          s = s - sp;
+          if (s < 1 || s > 300) sp = -sp;
+        }
+
+        function windowResized() {
+          resizeCanvas(windowWidth, windowHeight);
+        }
+      </script>
+    </main>
+  </body>
+</html>
