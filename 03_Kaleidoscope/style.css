@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+  position: fixed !important;
+  top: 0;
+  z-index: -1;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: rgb(0,0,0);
+  background: rgb(255,255,255);
+}
+
+::selection {
+  color: rgb(0,0,0);
+  background: rgb(255,255,255);
+}
+
+h1{
+  color:aqua;
+}
+
+button{
+padding: 12px 36px;
+border-radius: 6px;
+background-color: rgb(0,0,0);
+border: 0px solid rgb(255,255,255);
+color: rgb(255,255,255);
+font-size:20px;
+transition-duration: 0.4s;
+user-select: none;
+}
+
+button:hover {
+  background-color: rgb(255,255,255); /* Green */
+  color: rgb(50,50,50);
+}
+
+header{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.SaveButton{
+  left: 2%;
+  top: 50%;
+}
